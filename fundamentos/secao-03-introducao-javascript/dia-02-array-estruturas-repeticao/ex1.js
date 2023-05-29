@@ -7,7 +7,12 @@ for (let i =0 ; i < numbers.length; i++){
 }
 
 //Some todos os valores contidos no array e imprima o resultado.
+let sum = 0 
 
+for (let i =0 ; i < numbers.length; i++){
+    sum += numbers[i]
+}
+console.log(`soma: ${sum}`)
 
 /*Calcule e imprima a média aritmética dos valores contidos no array. A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos.
 
