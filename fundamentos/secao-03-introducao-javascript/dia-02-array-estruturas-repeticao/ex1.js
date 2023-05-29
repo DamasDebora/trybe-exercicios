@@ -27,7 +27,24 @@ if (media > 20){
     console.log('O valor da média aritmética é menor ou igual a 20')
 }
 
-/*Utilizando for, descubra o maior valor contido no array e imprima-o.
+//Utilizando for, descubra o maior valor contido no array e imprima-o.
+let greater = numbers[0]
+for (let i =0 ; i < numbers.length; i++){
+    if(numbers[i] > greater){
+        greater = numbers[i]
+    }
+}
+console.log(greater)
 
-Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
-*/
+//Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
+let result = 0
+for (let i =0 ; i < numbers.length; i++){
+    if(numbers[i] % 2 === 1){
+        result += 1
+    }
+}
+if( result === 0){
+    console.log('nenhum valor ímpar encontrado')
+} else {
+    console.log(result)
+}
