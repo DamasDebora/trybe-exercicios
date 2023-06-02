@@ -43,4 +43,16 @@ const getStudents = (obj) => {
 }
 console.log(getStudents(school))
 
+//Crie uma função que verifica se uma determinada chave existe em todos os elementos do array lessons. O retorno deve ser um booleano (true ou false).
+//Essa função deve possuir dois parâmetros: o objeto e o nome da chave.
+ 
+const verifyKey = (obj, key) => {
+    for(let i = 0; i < obj.lessons.length; i += 1){
+        if(obj.lessons[i][key] === undefined){
+            return false
+        }
+    }
+    return true
+}
+console.log(verifyKey(school, 'cours'))
 
