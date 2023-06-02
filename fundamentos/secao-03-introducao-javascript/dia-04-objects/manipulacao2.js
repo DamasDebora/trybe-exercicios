@@ -50,11 +50,17 @@ const customerInfo = (fullOrder) => {
     `;
 
 }
-
 console.log(customerInfo(order));
 
 const orderModifier = (fullOrder) => {
-    // Adicione abaixo as informações necessárias.
-}
+    fullOrder.name = 'Luiz Silva'
+    fullOrder.payment.total = 50
 
-  console.log(orderModifier(order));
+    const pizzas = Object.keys(fullOrder.order.pizza).join(', ')
+
+    return `
+    Olá, ${fullOrder.name},
+    o valor total de seu pedido de ${pizzas} e ${fullOrder.order.drinks.coke.type} 
+    é R$ ${fullOrder.payment.total},00.`
+}
+console.log(orderModifier(order));
