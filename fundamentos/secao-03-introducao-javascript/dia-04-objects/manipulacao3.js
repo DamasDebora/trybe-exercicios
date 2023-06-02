@@ -56,3 +56,26 @@ const verifyKey = (obj, key) => {
 }
 console.log(verifyKey(school, 'cours'))
 
+//Crie uma função para alterar o turno para noite no curso de Python.
+//Essa função deve ter três parâmetros: a base de dados a ser modificada, o nome do curso e o novo valor da chave.
+
+const changeShift = (obj, course, keyValue) => {
+
+  let findCourse
+
+  for(let i =0; i < obj.lessons.length; i += 1){
+    let element = obj.lessons[i]
+    if(element.course === course){
+      findCourse = element
+    }
+  }
+
+  if (findCourse !== undefined){
+    findCourse.shift = keyValue
+    return findCourse
+  } else{
+    return 'Curso não encontrado'
+  }
+
+}
+console.log(changeShift(school, 'Python', 'Noite'));
