@@ -42,5 +42,4 @@ for(let i = 0; i < entries.length; i += 1 ){
 }
 
 console.log(`Sua cesta possui: ${newArr.join(', ')}.`)
-
 console.log(newArr)
