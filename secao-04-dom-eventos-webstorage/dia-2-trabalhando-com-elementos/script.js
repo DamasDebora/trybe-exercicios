@@ -23,3 +23,11 @@ const sectionRight = document.createElement('section')
 sectionRight.className = 'right-content'
 main.appendChild(sectionRight)
 
+const img = document.createElement('img')
+img.src = 'https://picsum.photos/200'
+img.className = 'small-image'
+sectionLeft.appendChild(img)
+
+const ul = document.createElement('ul')
+const numbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+
