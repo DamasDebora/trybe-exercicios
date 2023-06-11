@@ -15,3 +15,7 @@ main.appendChild(section)
 const p = document.createElement('p')
 section.appendChild(p)
 
+const sectionLeft = document.createElement('section')
+sectionLeft.className = 'left-content'
+main.appendChild(sectionLeft)
+
