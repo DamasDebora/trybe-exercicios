@@ -8,3 +8,7 @@ const main = document.createElement('main')
 main.className = 'main-content'
 body.appendChild(main)
 
+const section = document.createElement('section')
+section.className = 'center-content'
+main.appendChild(section)
+
