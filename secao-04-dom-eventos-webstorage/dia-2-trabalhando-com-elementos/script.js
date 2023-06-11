@@ -12,3 +12,6 @@ const section = document.createElement('section')
 section.className = 'center-content'
 main.appendChild(section)
 
+const p = document.createElement('p')
+section.appendChild(p)
+
