@@ -38,3 +38,8 @@ for(let i =0; i < numbers.length; i += 1){
 }
 sectionRight.appendChild(ul)
 
+for (let i = 0; i < 3; i += 1){
+    const h3 = document.createElement('h3')
+    h3.innerText = i
+    main.appendChild(h3)
+}
