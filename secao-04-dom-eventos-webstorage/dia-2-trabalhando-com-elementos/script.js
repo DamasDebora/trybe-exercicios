@@ -31,3 +31,10 @@ sectionLeft.appendChild(img)
 const ul = document.createElement('ul')
 const numbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
 
+for(let i =0; i < numbers.length; i += 1){
+    const li = document.createElement('li')
+    li.innerText = numbers[i]
+    ul.appendChild(li)
+}
+sectionRight.appendChild(ul)
+
