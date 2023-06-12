@@ -53,3 +53,5 @@ for (let i =0; i < 3; i += 1){
 main.removeChild(sectionLeft)
 
 sectionRight.style.marginRight = 'auto'
+
+section.parentNode.style.background = 'green'
