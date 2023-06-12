@@ -44,3 +44,8 @@ for (let i = 0; i < 3; i += 1){
     h3.innerText = i
     main.appendChild(h3)
 }
+
+const h3 = document.getElementsByTagName('h3')
+for (let i =0; i < 3; i += 1){
+    h3[i].className = 'description'
+}
