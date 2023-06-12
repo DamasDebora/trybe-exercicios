@@ -49,3 +49,6 @@ const h3 = document.getElementsByTagName('h3')
 for (let i =0; i < 3; i += 1){
     h3[i].className = 'description'
 }
+
+main.removeChild(sectionLeft)
+
