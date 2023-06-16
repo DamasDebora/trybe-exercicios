@@ -2,6 +2,8 @@ window.onload = () => {
   const setBackgroundColor = (color) => {
     let content = document.querySelector(".content")
     content.style.backgroundColor = color
+
+    localStorage.setItem('backgroundColor', color)
   }
 
   const setFontColor = (color) => {
@@ -9,6 +11,8 @@ window.onload = () => {
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.color = color
     }
+
+    localStorage.setItem('fontColor', color)
   }
 
   const setFontSize = (size) => {
@@ -16,6 +20,8 @@ window.onload = () => {
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.fontSize = size
     }
+
+    localStorage.setItem('fontSize', size)
   }
 
   const setLineHeight = (height) => {
@@ -23,6 +29,8 @@ window.onload = () => {
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.lineHeight = height
     }
+
+    localStorage.setItem('lineHeight', height)
   }
 
   const setFontFamily = (family) => {
@@ -30,6 +38,8 @@ window.onload = () => {
     for (let index = 0; index < paragraphs.length; index += 1) {
       paragraphs[index].style.fontFamily = family
     }
+
+    localStorage.setItem('fontFamily', family)
   }
 
   // Cor de fundo da tela;
