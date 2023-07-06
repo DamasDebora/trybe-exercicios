@@ -31,3 +31,16 @@ const dragonDamage = (dragon) => {
 }
 
 dragonDamage(dragon)
+
+//Crie uma função que retorne o dano causado pelo warrior.
+//O dano será um número aleatório entre o valor do atributo strength
+
+const warriorDamage = (warrior) => {
+	const minDamage = warrior.strength
+	const maxDamage = Math.floor((Math.random() * (minDamage * warrior.weaponDmg)))
+
+	const damage = maxDamage > minDamage? maxDamage : minDamage
+	return damage
+}
+
+console.log(warriorDamage(warrior))
