@@ -30,11 +30,9 @@ const dragonDamage = (dragon) => {
 	return damage
 }
 
-dragonDamage(dragon)
 
 //Crie uma função que retorne o dano causado pelo warrior.
 //O dano será um número aleatório entre o valor do atributo strength
-
 const warriorDamage = (warrior) => {
 	const minDamage = warrior.strength
 	const maxDamage = Math.floor((Math.random() * (minDamage * warrior.weaponDmg)))
@@ -42,8 +40,6 @@ const warriorDamage = (warrior) => {
 	const damage = maxDamage > minDamage? maxDamage : minDamage
 	return damage
 }
-
-console.log(warriorDamage(warrior))
 
 //Crie uma função que retorne um objeto com duas chaves e dois valores 
 //contendo o dano e a mana gasta pelo mago em um turno.
@@ -67,8 +63,6 @@ const mageDamage = (mage) => {
 
 	return turnStats
 }
-
-console.log(mageDamage(mage))
 
 const gameActions = {
 	warriorTurn: (warriorDamage) => {
