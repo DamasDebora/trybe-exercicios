@@ -70,4 +70,14 @@ const mageDamage = (mage) => {
 
 console.log(mageDamage(mage))
 
+const gameActions = {
+	warriorTurn: (warriorDamage) => {
+		const damage = warriorDamage(warrior)
+		dragon.healthPoints -= damage
+		warrior.damage = damage
+	},
 
+};
+
+
+gameActions.warriorTurn(warriorDamage)
