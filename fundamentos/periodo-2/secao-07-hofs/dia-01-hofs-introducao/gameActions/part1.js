@@ -44,3 +44,30 @@ const warriorDamage = (warrior) => {
 }
 
 console.log(warriorDamage(warrior))
+
+//Crie uma função que retorne um objeto com duas chaves e dois valores 
+//contendo o dano e a mana gasta pelo mago em um turno.
+const mageDamage = (mage) => {
+	const mana =  mage.mana
+	const minDamage = mage.intelligence
+	const maxDamage = minDamage * 2
+
+	const turnStats = {
+		manaSpent: 0,
+		damageDealt: 'not enough mana',
+	}
+
+	if(mana > 15){
+		const damage = minDamage < maxDamage ? maxDamage : minDamage
+		turnStats.manaSpent = 15
+		turnStats.damageDealt = damage
+		return turnStats
+
+	}
+
+	return turnStats
+}
+
+console.log(mageDamage(mage))
+
+
