@@ -11,3 +11,8 @@ const getArea = () => {
 	return countries.reduce((countries, country) => countries + country.area, 0)
 }
 console.log(getArea())
+
+// 3 - Encontre o país com o maior nome.
+const longestName = () => countries
+  .reduce((acc, country) => acc.name.length > country.name.length ? acc : country) 
+console.log(longestName())
