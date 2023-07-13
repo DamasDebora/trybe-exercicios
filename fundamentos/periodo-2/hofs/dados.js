@@ -7,7 +7,6 @@ const pessoas = [
   {
     nome: 'Ana',
     divida: true,
-​
     gostaDeProgramarEm:['JS', 'REACT', 'PYTHON']
   },
   {
@@ -48,4 +47,3 @@ const pessoas = [
 ]
 
 module.exports = pessoas;
-Recolher
